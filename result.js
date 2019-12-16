@@ -1,0 +1,11 @@
+var obj=JSON.parse(localStorage.getItem('myStorage'));
+var name=obj.name;
+var mobile=obj.mobile;
+var email=obj.email;
+var gender=obj.gender;
+var ttr="<tr><td id='td0'></td><td id='td1'></td><td id='td2'></td><td id='td3'></td></tr>";
+var tbody=$("table tbody").append(ttr);
+$('#td0').html(name);
+$('#td1').html(mobile);
+$('#td2').html(email);
+$('#td3').html(gender);
